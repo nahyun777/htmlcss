@@ -1,0 +1,114 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.sub-container{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 10px;
+}
+.box1{
+  height: 100px;
+  width: 100px; 
+  background-color: purple;
+  color: white;
+}
+.box2{
+  height: 100px;
+  width: 100px; 
+  background-color: purple;
+  color: white;
+} 
+.box3{
+  height: 100px;
+  width: 100px; 
+  background-color: purple;
+  color: white;
+} 
+.grid-container{
+  display: flex;
+  flex-direction: column;
+}
+.box4{
+  height: 100px;
+  width: 100px; 
+  background-color: purple; 
+  color: white;
+}
+.box5{
+  align-self: center;
+  height: 100px;
+  width: 100px;     
+  background-color: purple;
+  color: white;
+}
+.box6{
+  align-self: flex-end;
+  height: 100px;
+  width: 100px;     
+  background-color: purple;
+  color: white;
+}
+.flex-container{
+  display: flex;
+  justify-content: center;
+}
+.box7{
+  position: relative;
+  height: 200px;
+  width: 200px; 
+  background-color: black; 
+  color: white;
+} 
+.box8{
+  position: absolute;
+  left: 50px;
+  top: 50px;  
+  height: 100px;
+  width: 100px;
+  background-color: purple; 
+  color: white;
+}
+.box9{
+  width: 100px;
+  height: 100px; 
+  background-color: purple;
+  color: white;
+}
+.box10{
+  width: 100px;
+  height: 100px; 
+  background-color: black;
+  color: white;
+  position: relative;
+  left: 50px;
+  top: -50px;  
+}
+.box11 {
+  width: 400px;
+  height: 150px;
+  background-color: black;
+  color: white;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+.box12{
+  width: 100px;
+  height: 100px; 
+  background-color: purple;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.box13{
+  width: 100px;
+  height: 100px; 
+  background-color: purple;
+  color: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+} 
