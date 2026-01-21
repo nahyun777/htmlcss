@@ -1,44 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>day8</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>사계절 이야기</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <link href="./style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">SEASON</a>
+      <a class="navbar-brand fw-bold" href="#" style="color: chocolate;">SEASON</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Spring</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Summer</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Fall</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Winter</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#">My page</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Spring</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Summer</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Fall</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Winter</a></li>
+          <li class="nav-item"><a class="nav-link " href="#">My page</a></li>
         </ul>
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="검색" aria-label="Search" />
+          <input class="form-control me-2" type="search" placeholder="계절 검색" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">search</button>
         </form>
       </div>
@@ -46,108 +36,125 @@
   </nav>
 
   <main>
-    <div id="carouselExampleIndicators" class="carousel slide">
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"
+          aria-current="true"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="3"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="./clouds-4750959_1280.jpg" class="d-block w-100" alt="...">
+          <img src="https://cdn.pixabay.com/photo/2021/04/21/13/20/cherry-blossoms-6196363_1280.jpg"
+            class="d-block w-100" alt="Spring">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>벚꽃이 흩날리는 봄</h5>
+            <p>화사한 벚꽃과 함께 시작되는 따스한 봄의 기운을 만나보세요.</p>
+          </div>
         </div>
         <div class="carousel-item">
-          <img src="https://cdn.pixabay.com/photo/2018/08/06/22/55/sun-3588618_1280.jpg" class="d-block w-100"
-            alt="...">
+          <img src="https://cdn.pixabay.com/photo/2020/01/02/16/39/water-4736282_1280.jpg" class="d-block w-100"
+            alt="Summer">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>시원한 물놀이의 계절 여름</h5>
+            <p>무더위를 시원하게 날려버릴 푸른 바다와 계곡으로 떠나보세요.</p>
+          </div>
         </div>
         <div class="carousel-item">
-          <img src="./helicopter-8023696_1280.jpg" class="d-block w-100" alt="...">
+          <img src="https://cdn.pixabay.com/photo/2022/10/05/08/21/autumn-7500200_1280.jpg" class="d-block w-100"
+            alt="Fall">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>황금빛 단풍의 향연 가을</h5>
+            <p>높고 푸른 하늘 아래 물든 단풍과 함께 여유를 즐기는 시간.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.pixabay.com/photo/2019/12/08/01/08/winter-4680354_1280.jpg" class="d-block w-100"
+            alt="Winter">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>하얀 눈이 덮인 고요한 겨울</h5>
+            <p>따뜻한 온기가 그리워지는 하얀 겨울의 낭만을 느껴보세요.</p>
+          </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
 
     <div class="text-center mt-5 mb-5">
-      <h2>Choice</h2>
+      <h2 class="display-5 fw-bold">Seasonal Choice</h2>
+      <p class="text-muted">당신이 가장 좋아하는 계절은 언제인가요?</p>
     </div>
 
     <div class="container mb-5">
-
-      <div class="row ">
-        <div class="col-md-3 col-sm-12">
-          <div class="card">
+      <div class="row g-4">
+        <div class="col-md-3 col-sm-6">
+          <div class="card h-100 shadow-sm">
             <img src="https://cdn.pixabay.com/photo/2021/04/21/13/20/cherry-blossoms-6196363_1280.jpg"
-            class="card-img-top" alt="...">
+              class="card-img-top" alt="Spring">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card’s
-                content.</p>
+              <h5 class="card-title text-success">Spring</h5>
+              <p class="card-text text-secondary small">벚꽃이 만개하고 만물이 소생하는 시기입니다. 새로운 시작을 준비하기 가장 좋은 계절입니다.</p>
+              <a href="#" class="btn btn-sm btn-outline-secondary">더 보기</a>
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-sm-12">
-          <div class="card">
+        <div class="col-md-3 col-sm-6">
+          <div class="card h-100 shadow-sm">
             <img src="https://cdn.pixabay.com/photo/2020/01/02/16/39/water-4736282_1280.jpg" class="card-img-top"
-            alt="...">
+              alt="Summer">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card’s
-                content.</p>
+              <h5 class="card-title text-primary">Summer</h5>
+              <p class="card-text text-secondary small">강렬한 태양과 시원한 계곡이 기다리는 계절입니다. 활기찬 에너지와 열정을 느껴보세요.</p>
+              <a href="#" class="btn btn-sm btn-outline-secondary">더 보기</a>
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-sm-12">
-          <div class="card">
+        <div class="col-md-3 col-sm-6">
+          <div class="card h-100 shadow-sm">
             <img src="https://cdn.pixabay.com/photo/2022/10/05/08/21/autumn-7500200_1280.jpg" class="card-img-top"
-            alt="...">
+              alt="Fall">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card’s
-                content.</p>
+              <h5 class="card-title" style="color: orange;">Fall</h5>
+              <p class="card-text text-secondary small">독서의 계절이자 수확의 기쁨이 있는 시기입니다. 선선한 바람과 함께 사색에 잠겨보세요.</p>
+              <a href="#" class="btn btn-sm btn-outline-secondary">더 보기</a>
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-sm-12">
-          <div class="card">
+        <div class="col-md-3 col-sm-6">
+          <div class="card h-100 shadow-sm">
             <img src="https://cdn.pixabay.com/photo/2019/12/08/01/08/winter-4680354_1280.jpg" class="card-img-top"
-            alt="...">
+              alt="Winter">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card’s
-                content.</p>
+              <h5 class="card-title text-info">Winter</h5>
+              <p class="card-text text-secondary small">하얀 눈과 따뜻한 코코아가 생각나는 계절입니다. 한 해를 마무리하며 휴식을 취해보세요.</p>
+              <a href="#" class="btn btn-sm btn-outline-secondary">더 보기</a>
             </div>
           </div>
         </div>
       </div>
+    </div>
   </main>
 
-
-
-  <footer>
-
+  <footer class="py-4 mt-5">
+    <div class="container text-center">
+      <div class="mb-3">
+        <a href="#" class="link-secondary link-underline-opacity-0 mx-2 small">기록장 소개</a>
+        <a href="#" class="link-secondary link-underline-opacity-0 mx-2 small">문의하기</a>
+        <a href="#" class="link-secondary link-underline-opacity-0 mx-2 small">개인정보 보호</a>
+      </div>
+      <p class="footer-msg mb-1">사계절의 소중한 순간들을 정성껏 담았습니다.</p>
+      <p class="footer-msg mb-0">&copy; 2024 SEASON RECORD. All rights reserved.</p>
+    </div>
   </footer>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-    crossorigin="anonymous"></script>
-    <!--  -->
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -1,15 +1,25 @@
-.col {
-  /* border: 1px solid red; */
-  padding: 20px;
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
 }
 
-.btn.btn-outline-success {
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.btn-outline-success {
   color: chocolate;
   border-color: chocolate;
 }
 
-.btn.btn-outline-success:hover {
+.btn-outline-success:hover {
   background-color: chocolate;
   color: white;
   border-color: chocolate;
+}
+
+footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
 }
